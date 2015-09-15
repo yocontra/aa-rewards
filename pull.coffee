@@ -60,4 +60,4 @@ console.log 'Sending', reqs, 'requests...'
 asyncify tasks, (err, res) ->
   return console.error err if err?
   console.log res
-  require('fs').writeFileSync 'results.json', JSON.stringify res null, 2
+  require('fs').writeFileSync 'results.json', JSON.stringify res, null, 2

@@ -10,4 +10,4 @@ module.exports = (o, cb) ->
         n[k] = async.parallel.bind null, asyncRecurse v
     return n
 
-  return async.parallelLimit asyncRecurse(o), 1, cb
+  return async.parallelLimit asyncRecurse(o), 10, cb
